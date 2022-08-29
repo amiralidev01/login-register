@@ -29,14 +29,11 @@
             <div class="header-bottom__wrapper">
                 <div class="signup-form">
 
-                    <form class="form" action="/includes/signup.inc.php" method="post">
-                        <h2>Sign Up</h2>
-                        <input type="text" name="name" id="" placeholder="Full name...">
-                        <input type="email" name="email" id="" placeholder="Email...">
-                        <input type="text" name="uid" id="" placeholder="Username...">
+                    <form class="form" action="/includes/login.inc.php" method="post">
+                        <h2>Log In</h2>
+                        <input type="text" name="name" id="" placeholder="Username/Email...">
                         <input type="password" name="pwd" id="" placeholder="Password...">
-                        <input type="password" name="pwdrepeat" id="" placeholder="Repeat password...">
-                        <button type="submit" name="submit">Sign Up</button>
+                        <button type="submit" name="submit">Log In</button>
                     </form>
                 </div>
 
