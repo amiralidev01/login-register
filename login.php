@@ -14,8 +14,8 @@
                     <li class="menu__item"><a class="menu-item__link" href="">HOME</a></li>
                     <li class="menu__item"><a class="menu-item__link" href="">ABOUT US</a></li>
                     <li class="menu__item"><a class="menu-item__link" href="">FIND BLOGS</a></li>
-                    <li class="menu__item"><a class="menu-item__link" href="">SIGN UP</a></li>
-                    <li class="menu__item"><a class="menu-item__link" href="">LOGIN IN</a></li>
+                    <li class="menu__item"><a class="menu-item__link" href="signup.php">SIGN UP</a></li>
+                    <li class="menu__item"><a class="menu-item__link" href="login.php">LOGIN IN</a></li>
                 </nav>
             </div>
 
@@ -31,7 +31,7 @@
 
                     <form class="form" action="/includes/login.inc.php" method="post">
                         <h2>Log In</h2>
-                        <input type="text" name="name" id="" placeholder="Username/Email...">
+                        <input type="text" name="uid" id="" placeholder="Username/Email...">
                         <input type="password" name="pwd" id="" placeholder="Password...">
                         <button type="submit" name="submit">Log In</button>
                     </form>

@@ -93,3 +93,20 @@ function createUser($conn, $name, $email, $username, $pwd)
     mysqli_stmt_close($stmt);
     header("Location: ../signup.php?error=none");
 }
+
+
+function emptyInputLogin($username, $password)
+{
+    $result = '';
+    if (empty($username) || empty($password)) {
+        $result = true;
+    } else {
+        $result = false;
+    }
+
+    return $result;
+}
+
+function loginUser($conn, $username, $password)
+{
+}
