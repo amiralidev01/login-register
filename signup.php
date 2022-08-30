@@ -36,6 +36,35 @@
                         <input type="text" name="uid" id="" placeholder="Username...">
                         <input type="password" name="pwd" id="" placeholder="Password...">
                         <input type="password" name="pwdrepeat" id="" placeholder="Repeat password...">
+
+
+                        <?php
+                        if (isset($_GET['error'])) {
+                            if ($_GET['error'] == "emptyinput") {
+                                echo "<p>Fill in all fields!</p>";
+                            }
+                            if ($_GET['error'] == "invalidUid") {
+                                echo "<p>Choose a proper username!</p>";
+                            }
+                            if ($_GET['error'] == "invalidEmail") {
+                                echo "<p>Choose a proper email!</p>";
+                            }
+                            if ($_GET['error'] == "passwordsdontmatch") {
+                                echo "<p>passwords doesn't match!</p>";
+                            }
+                            if ($_GET['error'] == "stmtfailed") {
+                                echo "<p>Something went wrong, try again!</p>";
+                            }
+                            if ($_GET['error'] == "usernametaken") {
+                                echo "<p>Username already taken!</p>";
+                            }
+                            if ($_GET['error'] == "none") {
+                                echo "<span>You have signed up!</span>";
+                            }
+                        }
+                        ?>
+
+
                         <button type="submit" name="submit">Sign Up</button>
                     </form>
                 </div>

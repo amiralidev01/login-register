@@ -144,3 +144,15 @@ a {
     cursor: pointer;
     font-weight: bolder;
 }
+
+.form p{
+    margin-top: .9rem;
+    color: red;
+    font-size: 1rem;
+}
+
+.form span{
+    color: rgb(24, 183, 0);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
